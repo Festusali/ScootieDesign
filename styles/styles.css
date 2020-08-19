@@ -1,0 +1,308 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.con-row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.sm6 {
+    width: 50%;
+}
+
+.flex-con-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.m3 {
+    width: 33.3%;
+}
+
+.content-box {
+    min-width: 150px;
+    min-height: 150px;
+    padding: 30px;
+}
+
+.content-box img.round-image {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+
+.action-button {
+    background-color: orange;
+    color: white;
+    display: inline-block;
+    padding: 5px 15px;
+    text-decoration: none;
+}
+
+.flex-nav {
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+    padding: 10px 35px;
+}
+
+.nav-item {
+    padding: 5px;
+}
+
+.nav-item a,
+.nav-item a:hover,
+.nav-item a:active {font-size: larger;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+#navBar .nav-item a {
+    color: black;
+}
+
+#navBar .flex-nav div.action-button a {
+    color: white;
+}
+
+.nav-right {
+    margin-left: auto;
+}
+
+#topBanner {
+    background: #323943;
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-origin: border-box;
+    background-position: center;
+    /*position: relative;*/
+    width: 100%;
+    min-height: 200px;
+    z-index: -1;
+    padding-left: 25px;
+}
+
+.top-banner {
+    max-width: 200px;
+    color: white;
+    text-shadow: 2px 2px gray;
+}
+
+#navBarBottom .flex-nav {
+    background-color: #323943;
+}
+
+#navBarBottom .nav-item a {
+    color: white;
+}
+
+#bottomBanner {
+    background-color: #4a5265;
+    color: white;
+}
+
+#socialShare span {
+    margin: 0 5px;
+    background-color: inherit;
+    color: orange;
+}
+
+.pad-left-large {
+    padding-left: 25px;
+}
+
+.slider-buttons {
+    display: inline-block;
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+    width: auto;
+}
+
+.slider-buttons div {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: medium solid white;
+    border-radius: 50%;
+}
+
+
+
+/* Arrow positioning*/
+.pos-relative {
+    position: relative;
+}
+
+.arrow-con {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+
+.top-banner-arrow .line1-con {
+    position: absolute;
+    width: 30%;
+    height: 5px;
+    top: 40%;
+    left: 0px;
+    background: orange;
+}
+
+.top-banner-arrow .line2-con {
+    position: absolute;
+    width: 8.5%;
+    height: 5px;
+    top: 40%;
+    left: 30%;
+    background: orange;
+    transform: translate(-2.5px, 0%) rotate(90deg);
+    transform-origin: left;
+}
+
+.top-banner-arrow .line3-con {
+    position: absolute;
+    width: 50%;
+    height: 5px;
+    top: 81.4%;
+    left: 29.5%;
+    background: orange;
+}
+
+.top-banner-arrow .point-con {
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 77.5%;
+    left: 78%;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 37px solid orange;
+}
+
+
+.right-arrow .line1-con {
+    position: absolute;
+    width: 5%;
+    height: 5px;
+    top: 30%;
+    left: 0px;
+    background: orange;
+}
+
+.right-arrow .line2-con {
+    position: absolute;
+    width: 4%;
+    height: 5px;
+    top: 30%;
+    left: 5%;
+    background: orange;
+    transform: translate(-2.5px, 0%) rotate(90deg);
+    transform-origin: left;
+}
+
+.right-arrow .line3-con {
+    position: absolute;
+    width: 4%;
+    height: 5px;
+    top: 48%;
+    left: 5%;
+    background: orange;
+}
+
+.right-arrow .point-con {
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 44%;
+    left: 8%;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 37px solid orange;
+}
+
+
+
+.left-arrow .line1-con {
+    position: absolute;
+    width: 20%;
+    height: 5px;
+    top: 30%;
+    right: 0px;
+    background: orange;
+}
+
+.left-arrow .line2-con {
+    position: absolute;
+    width: 5%;
+    height: 5px;
+    top: 30%;
+    right: 15%;
+    background: orange;
+    transform: rotate(90deg) translate(-2.5px, 0%);
+    transform-origin: left;
+}
+
+.left-arrow .line3-con {
+    position: absolute;
+    width: 10%;
+    height: 5px;
+    top: 51.5%;
+    right: 20%;
+    background: orange;
+}
+
+.left-arrow .point-con {
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 47%;
+    right: 28%;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 37px solid orange;
+}
+
+.divider {
+    margin-top: 40px;
+    width: 72%;
+    border-bottom: 7px solid lightgray;
+}
+
+.tilt-button {
+    background-color: orange;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: -25px;
+    padding: 7px;
+    border-radius: 50%;
+}
+
+.divider .button1 {
+    left: 3%;
+}
+
+.divider .button2 {
+    left: 36%;
+}
+
+.divider .button3 {
+    left: 70%;
+}
